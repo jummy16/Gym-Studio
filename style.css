@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+/* navbar */
+.header{
+    position: absolute;
+    bottom: -18px;
+    left: 3rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+}
+.header-link{
+    color: #fff;
+    text-decoration: none;
+}
+.header-link:hover{
+    color: #fff;
+}
+nav{
+    height: 3rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(35,45,57,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.btn{
+    height: 2.5rem;
+    width: 6%;
+    position: absolute;
+    top: 4px;
+    right: 4rem;
+    background-color: rgb(237, 86, 59);
+    border: none;
+    color: #fff;
+    
+}
+.btn:hover{
+    color: rgb(237, 86, 59);
+}
+.nav-section{
+    width: 100%;
+    position: relative;
+}
+nav ul{
+    display: flex;
+    float: right;
+    margin-right: 9rem;
+}
+li{
+    list-style: none;
+    font-size: 6px;
+    
+}
+li .nav-link{
+    list-style: none;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+}
+.nav-link{
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: rgb(237, 86, 59);
+    cursor: pointer;
+}
+span{
+    color: rgb(237, 86, 59);
+}
+/* main section */
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.main-section{
+    text-align: center;
+    margin-top: 14rem;
+    color: #fff;
+}
+.work-harder{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom:-40px ;
+}
+.easy{
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+.btn-2{
+    height: 2.5rem;
+    width: 13%;
+    background-color: rgb(237, 86, 59);
+    border: none;
+    font-weight: bold;
+}
+.section-link{
+    color: #fff;
+    text-decoration: none;
+}
+.section-link:hover{
+    color: #fff;
+}
+.btn-2:hover{
+    background-color:rgb(221, 119, 101) ;
+}
+/* first section */
+.first-section{
+    margin-top: 25rem;
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    margin-left: 6rem;
+    margin-top: 3rem;
+}
+.choose-program{
+    font-weight: 800;
+    color: rgb(35, 45, 57);
+}
+.first-section-p{
+    color: rgb(122, 122, 122);
+}
+.first-section-icon{
+    float: left;
+    margin-right: 30px;
+}
+.first-section-link{
+    text-decoration: none;
+    font-size: 12px;
+}
+.first-section-img{
+    margin-top: 1.2rem;
+}
+.first-section-para{
+    color: rgb(122, 122, 122);
+}
