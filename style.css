@@ -148,3 +148,229 @@ span{
 .first-section-para{
     color: rgb(122, 122, 122);
 }
+/* call to action */
+#CTA{
+    background-image: url(asset/training-image-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 120px 0px;
+    background-position: center center;
+    margin-top: 6rem;
+    /* color: rgb(33, 37, 41); */
+    /* background-color: rgba(35,45,57,0.8); */
+}
+.cta-heading{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.cta-paragraph{
+    color: #fff;
+    font-size: 1rem;
+}
+/* Classes section */
+.classes-section{
+    margin-top: 8rem;
+}
+.classes-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+#tabs ul li a {
+    text-transform: capitalize;
+    width: 70%;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px;
+    font-size: 19px;
+    color: rgb(35, 45, 57);
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    padding: 2rem;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    margin: 1rem;
+}
+.Schedule-btn a{
+    text-align: center;
+    width: 70%;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 600;
+    background-color: rgb(237, 86, 59);
+    letter-spacing: 0.5px;
+    padding:30px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+ .Schedule-btn a:hover {
+    background-color: #f9735b;
+  }
+  .tab-content{
+    margin-top: 2rem;
+  }
+  .tab-content img{
+    overflow: hidden;
+    border-radius: 5px;
+}
+.tab-content h4 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #232d39;
+    margin-bottom: 20px;
+  }
+  .tab-content p {
+    font-size: 14px;
+    color: #7a7a7a;
+    margin-bottom: 28px;
+  }
+  .tab-content-btn{
+    width: 20%;
+    background-color: rgb(237, 86, 59);
+    border: none;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+  }
+  .tab-content-btn:hover{
+    background-color: #f9735b;
+  }
+ .remain-tab-content{
+    display: none;
+ }
+ /* schedule classes */
+ #schedule{
+    background-image: url(asset/);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 0px 140px;
+    background-position: center center;
+    text-align: center;
+    margin-top: 7rem;
+ }
+ .schedule-h2{
+    font-weight: 900;
+    text-transform: uppercase;
+    /* color: #fff; */
+ }
+ .schedule-week{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .schedule-week,li{
+    font-size: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+ .schedule-week a{
+    text-decoration: none;
+    color: black;
+ }
+ .schedule-week,li :hover{
+    color: #f9735b;
+    text-decoration: none;
+ }
+ .schedule-table{
+        width: 50%;
+        border: 2px solid black;
+        border-collapse: collapse;
+        margin: 10px 20px 0 30px;
+        text-align: center;
+ }
+ #schedule table tbody {
+    border-top: 1px solid black;
+}
+td{
+    padding: 5px;
+    /* text-align: center; */
+    border: 1px solid black;
+}
+
+
+
+  /* #schedule table tbody tr td {
+    border-right: 1px solid black;
+    height: 100px;
+  }
+  
+  #schedule table tr td {
+    color: black;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+  }
+  
+  .schedule-table.filtering .ts-item {
+      opacity: 0;
+      transition: all 0.5s;
+  }
+  
+  .schedule-table.filtering .ts-item.show {
+      opacity: 1;
+      transition: all 0.5s;
+  }
+  
+  #schedule .filters {
+    margin-bottom: 40px;
+  }
+  #schedule .filters ul {
+    padding: 0;
+    text-align: center;
+  }
+  #schedule .filters ul li {
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  #schedule .filters ul li:after {
+    content: "/";
+    margin-left: 10px;
+    color: black;
+  }
+  #schedule .filters ul li:last-child {
+    margin-right: 0px;
+  }
+  #schedule .filters ul li:last-child::after {
+    display: none;
+  }
+  #schedule .filters ul li.active,
+  #schedule .filters ul li:hover {
+    color: #ed563b;
+  }
+  #schedule .filters-content {
+    margin-top: 50px;
+  }
+  #schedule .filters-content .show {
+    opacity: 1;
+    visibility: visible;
+    transition: all 350ms;
+  }
+  #schedule .filters-content .hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 350ms;
+  } */
+
+
+  

@@ -12,17 +12,17 @@
         <div class="nav-section">
             <h1 class="header"><a class="header-link" href="#">TRAINING<span>STUDIO</span></a></h1>
         <ul>
-            <li><a class="nav-link" href="#"><span>HOME</span></a></li>
-            <li><a class="nav-link" href="#">ABOUT</a></li>
-            <li><a class="nav-link" href="#">CLASSES</a></li>
-            <li><a class="nav-link" href="#">SCHEDULES</a></li>
+            <li><a class="nav-link" href="#home"><span>HOME</span></a></li>
+            <li><a class="nav-link" href="#about">ABOUT</a></li>
+            <li><a class="nav-link" href="#our-classes">CLASSES</a></li>
+            <li><a class="nav-link" href="#schedule">SCHEDULES</a></li>
             <li><a class="nav-link" href="#">CONTACT</a></li>
         </ul>
         <button class="btn">SIGN UP</button>
         </div>
     </nav>
         <!-- main section -->
-        <div>
+        <div id="home" >
             <video class="video" src="asset/gym-video.mp4" autoplay loop muted></video>
         </div>
         <div class="main-section">
@@ -31,7 +31,7 @@
             <button class="btn-2"><a class="section-link" href="#">BECOME A MEMBER</a></button>
         </div>
         <!-- first section -->
-        <section>
+        <section id="about">
             <div class="first-section">
                 <h2 class="choose-program">CHOOSE<span> PROGRAM</span></h2>
                 <img src="asset/line-dec.png" alt="logo">
@@ -113,7 +113,143 @@
             </div>
         </div>
         </section>
-
+        <!-- call to action -->
+        <section id="CTA">
+            <div class="CTA-content">
+                <h2 class="cta-heading">DON'T <span>THINK</span>, BEGIN <span>TODAY</span>!</h2>
+                <p class="cta-paragraph">The training studio is designed to give everyone the
+                    tools they need to reach their dream fitness goals.
+                    We can't<br/> wait to have you!.</p>
+            </div>
+            <div class="CTA-button">
+                <button id="#our-classes" class="btn-2"><a class="section-link" href="#">BECOME A MEMBER</a></button>
+            </div>
+        </section>
+        <!-- Our classes section -->
+        <section id="our-classes">
+            <div class="first-section classes-section">
+                <h2>Our <span>Classes</span></h2>
+                <img src="asset/line-dec.png" alt="line-dec">
+                <p class="first-section-p"> Here are our various Training classes you can choose from .</p>
+            </div>
+            <div class="classes-grid">
+                <div id="tabs">
+                    <ul>
+                        <li><a href='#tabs-1'><img src="asset/tabs-first-icon.png" alt="">First Training
+                                Class</a></li>
+                        <li><a href='#tabs-2'><img src="asset/tabs-first-icon.png" alt="">Second Training
+                                Class</a></a></li>
+                        <li><a href='#tabs-3'><img src="asset/tabs-first-icon.png" alt="">Third Training
+                                Class</a></a></li>
+                        <li><a href='#tabs-4'><img src="asset/tabs-first-icon.png" alt="">Fourth Training
+                                Class</a></a></li>
+                        <div class="Schedule-btn"><a href="#">View All Schedules</a></div>
+                    </ul>
+                </div>
+                <div >
+                    <div id="tab-1" class="tab-content">
+                        <img src="asset/training-image-01.jpg" alt="First Class">
+                            <h4>First Training Class</h4>
+                            <p> Lifting an appropriate amount of weight.
+                                Start with a weight you can lift comfortably 12 to 15 times,
+                                instructors would be around to guide you.
+                                Learn to do each exercise correctly.
+                            </p>
+                            <div class="tab-content-btn">
+                                <a class="section-link" href="#">View Schedule</a>
+                            </div>
+                    </div>
+                    <div class="remain-tab-content">
+                        <div id="tab-2" class="tab-content">
+                            <img src="asset/training-image-02.jpg" alt="Second Training">
+                                <h4>Second Training Class</h4>
+                                <p>Yoga is a mind and body practice.
+                                    Various styles of yoga combines physical postures, breathing techniques, and meditation
+                                    or relaxation.</p>
+                                <div class="tab-content-btn">
+                                    <a class="section-link"  href="#">View Schedule</a>
+                                </div>
+                        </div>
+                        <div id="tab-3" class="tab-content">
+                            <img src="asset/training-image-03.jpg" alt="Third Class">
+                                <h4>Third Training Class</h4>
+                                <p>Your induction should include a brief 'how to' for every machine.
+                                    If there's one that was missed out and you want to use it, don't try to figure it out on
+                                    your own: ask a staff member to show you how to use it properly.</p>
+                                <div class="tab-content-btn">
+                                    <a class="section-link"  href="#">View Schedule</a>
+                                </div>
+                        </div>
+                        <div id="tab-4" class="tab-content">
+                            <img src="asset/training-image-04.jpg" alt="Fourth Training">
+                            <h4>Fourth Training Class</h4>
+                            <p>Warm ups are crucial as they prepare the body for the demands of exercise, loosening up
+                                the muscles and reducing the risk of injury.</p>
+                            <div class="tab-content-btn">
+                                <a class="section-link"  href="#">View Schedule</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Classes schedule -->
+        <section id="schedule">
+            <div>
+            <div>
+                <h2 class="schedule-h2">Classes <span>Schedule</span></h2>
+                    <img src="asset/line-dec.png" alt="line-dec">
+                    <p>This class schedule typically includes all
+                        of the workout routines that each<br/> member will be taught weekly.</p>
+            </div>
+            <div>
+                <ul class="schedule-week">
+                    <li class="active" data-tsfilter="monday"><a href="#">Monday</a></li>
+                    <li data-tsfilter="tuesday"><a href="#">Tuesday</a></li>
+                    <li data-tsfilter="wednesday"><a href="#">Wednesday</a></li>
+                    <li data-tsfilter="thursday"><a href="#">Thursday</a></li>
+                    <li data-tsfilter="friday"><a href="#">Friday</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="schedule-table">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="day-time">Fitness Class</td>
+                        <td class="monday ts-item show" data-tsmeta="monday">10:00AM - 11:30AM</td>
+                        <td class="tuesday ts-item" data-tsmeta="tuesday">2:00PM - 3:30PM</td>
+                        <td>William G. Stewart</td>
+                    </tr>
+                    <tr>
+                        <td class="day-time">Muscle Training</td>
+                        <td class="friday ts-item" data-tsmeta="friday">10:00AM - 11:30AM</td>
+                        <td class="thursday friday ts-item" data-tsmeta="thursday" data-tsmeta="friday">
+                            2:00PM - 3:30PM</td>
+                        <td>Paul D. Newman</td>
+                    </tr>
+                    <tr>
+                        <td class="day-time">Body Building</td>
+                        <td class="tuesday ts-item" data-tsmeta="tuesday">10:00AM - 11:30AM</td>
+                        <td class="monday ts-item show" data-tsmeta="monday">2:00PM - 3:30PM</td>
+                        <td>Boyd C. Harris</td>
+                    </tr>
+                    <tr>
+                        <td class="day-time">Yoga Training Class</td>
+                        <td class="wednesday ts-item" data-tsmeta="wednesday">10:00AM - 11:30AM</td>
+                        <td class="friday ts-item" data-tsmeta="friday">2:00PM - 3:30PM</td>
+                        <td>Hector T. Daigle</td>
+                    </tr>
+                    <tr>
+                        <td class="day-time">Advanced Training</td>
+                        <td class="thursday ts-item" data-tsmeta="thursday">10:00AM - 11:30AM</td>
+                        <td class="wednesday ts-item" data-tsmeta="wednesday">2:00PM - 3:30PM</td>
+                        <td>Bret D. Bowers</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </section>
     <script src="index.js"></script>
 </body>
 </html>
