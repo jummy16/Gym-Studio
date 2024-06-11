@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Training Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/24f72e93d9.js" crossorigin="anonymous"></script>
+    <title>Gym Studio</title>
 </head>
 <body>
     <!-- navbar -->
@@ -16,10 +18,14 @@
             <li><a class="nav-link" href="#about">ABOUT</a></li>
             <li><a class="nav-link" href="#our-classes">CLASSES</a></li>
             <li><a class="nav-link" href="#schedule">SCHEDULES</a></li>
-            <li><a class="nav-link" href="#">CONTACT</a></li>
+            <li><a class="nav-link" href="#contact-us">CONTACT</a></li>
         </ul>
         <button class="btn">SIGN UP</button>
-        </div>
+    </div>
+    <div class="nav-icon">
+        <img src="asset/bars-removebg-preview.png" alt="navbar">
+        <img src="asset/close-removebg-preview.png" alt="closebar">
+    </div>
     </nav>
         <!-- main section -->
         <div id="home" >
@@ -135,13 +141,13 @@
             <div class="classes-grid">
                 <div id="tabs">
                     <ul>
-                        <li><a href='#tabs-1'><img src="asset/tabs-first-icon.png" alt="">First Training
+                        <li id="ui-id-2"><a href='#tabs-1'><img src="asset/tabs-first-icon.png" alt="">First Training
                                 Class</a></li>
-                        <li><a href='#tabs-2'><img src="asset/tabs-first-icon.png" alt="">Second Training
+                        <li id="ui-id-2"><a href='#tabs-2'><img src="asset/tabs-first-icon.png" alt="">Second Training
                                 Class</a></a></li>
-                        <li><a href='#tabs-3'><img src="asset/tabs-first-icon.png" alt="">Third Training
+                        <li id="ui-id-2"><a href='#tabs-3'><img src="asset/tabs-first-icon.png" alt="">Third Training
                                 Class</a></a></li>
-                        <li><a href='#tabs-4'><img src="asset/tabs-first-icon.png" alt="">Fourth Training
+                        <li id="ui-id-2"><a href='#tabs-4'><img src="asset/tabs-first-icon.png" alt="">Fourth Training
                                 Class</a></a></li>
                         <div class="Schedule-btn"><a href="#">View All Schedules</a></div>
                     </ul>
@@ -194,62 +200,200 @@
             </div>
         </section>
         <!-- Classes schedule -->
-        <section id="schedule">
-            <div>
-            <div>
-                <h2 class="schedule-h2">Classes <span>Schedule</span></h2>
-                    <img src="asset/line-dec.png" alt="line-dec">
-                    <p>This class schedule typically includes all
-                        of the workout routines that each<br/> member will be taught weekly.</p>
-            </div>
-            <div>
-                <ul class="schedule-week">
-                    <li class="active" data-tsfilter="monday"><a href="#">Monday</a></li>
-                    <li data-tsfilter="tuesday"><a href="#">Tuesday</a></li>
-                    <li data-tsfilter="wednesday"><a href="#">Wednesday</a></li>
-                    <li data-tsfilter="thursday"><a href="#">Thursday</a></li>
-                    <li data-tsfilter="friday"><a href="#">Friday</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="schedule-table">
-            <table>
-                <tbody>
-                    <tr>
-                        <td class="day-time">Fitness Class</td>
-                        <td class="monday ts-item show" data-tsmeta="monday">10:00AM - 11:30AM</td>
-                        <td class="tuesday ts-item" data-tsmeta="tuesday">2:00PM - 3:30PM</td>
-                        <td>William G. Stewart</td>
-                    </tr>
-                    <tr>
-                        <td class="day-time">Muscle Training</td>
-                        <td class="friday ts-item" data-tsmeta="friday">10:00AM - 11:30AM</td>
-                        <td class="thursday friday ts-item" data-tsmeta="thursday" data-tsmeta="friday">
-                            2:00PM - 3:30PM</td>
-                        <td>Paul D. Newman</td>
-                    </tr>
-                    <tr>
-                        <td class="day-time">Body Building</td>
-                        <td class="tuesday ts-item" data-tsmeta="tuesday">10:00AM - 11:30AM</td>
-                        <td class="monday ts-item show" data-tsmeta="monday">2:00PM - 3:30PM</td>
-                        <td>Boyd C. Harris</td>
-                    </tr>
-                    <tr>
-                        <td class="day-time">Yoga Training Class</td>
-                        <td class="wednesday ts-item" data-tsmeta="wednesday">10:00AM - 11:30AM</td>
-                        <td class="friday ts-item" data-tsmeta="friday">2:00PM - 3:30PM</td>
-                        <td>Hector T. Daigle</td>
-                    </tr>
-                    <tr>
-                        <td class="day-time">Advanced Training</td>
-                        <td class="thursday ts-item" data-tsmeta="thursday">10:00AM - 11:30AM</td>
-                        <td class="wednesday ts-item" data-tsmeta="wednesday">2:00PM - 3:30PM</td>
-                        <td>Bret D. Bowers</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <section class="section" id="schedule">
+            <div class="container">
+                        <div class="section-heading">
+                            <h2 class="section-heading-h2">Classes <span>Schedule</span></h2>
+                            <img src="asset/line-dec.png" alt="line-dec">
+                            <p>This class schedule typically includes all
+                                of the workout routines that each<br/> member will be taught weekly.</p>
+                        </div>
+                        <div class="filters">
+                            <ul class="schedule-filter">
+                                <li class="active" id="mon" onclick="showMday()" > <a >Monday</a></li>
+                                <li id="tue" onclick="showTday()"><a>Tuesday</a></li>
+                                <li id="wed" onclick="showWday()"><a>Wednesday</a></li>
+                                <li id="thur" onclick="showThday()"><a>Thursday</a></li>
+                                <li id="fri" onclick="showFday()"><a>Friday</a></li>
+                            </ul>
+                        </div>
+                        <div class="schedule-table filtering">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="day-time">Fitness Class</td>
+                                        <td id="m1"></td>
+                                        <td id="t1"></td>
+                                        <td>William G. Stewart</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day-time">Muscle Training</td>
+                                        <td id="f1"></td>
+                                        <td id="th1"></td>
+                                        <td>Paul D. Newman</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day-time">Body Building</td>
+                                        <td id="t2"></td>
+                                        <td id="m2"></td>
+                                        <td>Boyd C. Harris</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day-time">Yoga Training Class</td>
+                                        <td id="w1" ></td>
+                                        <td id="f2" ></td>
+                                        <td>Hector T. Daigle</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day-time">Advanced Training</td>
+                                        <td id="th2" ></td>
+                                        <td id="w2" ></td>
+                                        <td>Bret D. Bowers</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                     </div>
         </section>
+    
+        <!-- Testimonial Starts -->
+        <section class="section" id="trainers">
+            <div class="container">
+                        <div class="trainer-section">
+                            <h2 class="trainer-h2">Expert <span>Trainers</span></h2>
+                            <img src="asset/line-dec.png" alt="line-dec">
+                            <p class="trainer-para">Bringing you closer to our expert trainers and instructors.</p>
+                        </div>
+                        <div class="trainer-grid">
+                        <div class="trainer-item">
+                            <div class="image-thumb">
+                                <img src="asset/first-trainer.jpg" alt="">
+                            </div>
+                            <div class="down-content">
+                                <span>Strength Trainer</span>
+                                <h4>Bret D. Bowers</h4>
+                                <p class="trainer-paragraph">Delivers high-energy trainings using the latest
+                                    techniques in exercise science, cardio programs
+                                    and strength training.</p>
+                                <ul class="social-icons">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="trainer-item">
+                            <div class="image-thumb">
+                                <img src="asset/second-trainer.jpg" alt="">
+                            </div>
+                            <div class="down-content">
+                                <span>Muscle Trainer</span>
+                                <h4>Hector T. Daigle</h4>
+                                <p class="trainer-paragraph">
+                                    Ensures effective workouts,
+                                    identifying different muscle groups and
+                                    explaining appropriate methods to strengthen specific muscles.
+                                </p>
+    
+                                <ul class="social-icons">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="trainer-item">
+                            <div class="image-thumb">
+                                <img src="asset/third-trainer.jpg" alt="">
+                            </div>
+                            <div class="down-content">
+                                <span>Power Trainer</span>
+                                <h4>Paul D. Newman</h4>
+                                <p class="trainer-paragraph">Leads kinesthetic group exercise classes,
+                                    design classes to match the skill
+                                    and learning level of all participants.</p>
+                                <ul class="social-icons">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                     </div>
+        </section>
+        <!-- Testimonial Ends -->
+    
+        <!-- Contact Us Area Starts -->
+        <section class="section" id="contact-us">
+            <div class="container-fluid">
+                        <div id="map">
+                            <div class="mapouter">
+                                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ibadan%20nigeria&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org">putlocker</a><br>
+                                    <style>
+                                        .mapouter {
+                                            position: relative;
+                                            text-align: right;
+                                            height: 500px;
+                                            width: 600px;
+                                        }
+                                    </style><a href="https://www.embedgooglemap.net"></a>
+                                    <style>
+                                        .gmap_canvas {
+                                            overflow: hidden;
+                                            background: none !important;
+                                            height: 500px;
+                                            width: 600px;
+                                        }
+                                    </style>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <form id="contact" action="" method="post">
+                                    <div>
+                                        <fieldset>
+                                            <input name="name" type="text" id="name" placeholder="Your Name*" required="">
+                                        </fieldset>
+                                    </div>
+                                    <div>
+                                        <fieldset>
+                                            <input name="email" type="text" id="email" pattern="[^ @]@[^ @]" placeholder="Your Email*" required="">
+                                        </fieldset>
+                                    </div>
+                                    <div>
+                                        <fieldset>
+                                            <input name="subject" type="text" id="subject" placeholder="Subject">
+                                        </fieldset>
+                                    </div>
+                                    <div>
+                                        <fieldset>
+                                            <textarea name="message" rows="6" id="message" placeholder="Message" required=""></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div>
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                                        </fieldset>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+        </section>
+        <!-- Contact Us Area Ends -->
+    
+        <!-- Footer Start -->
+        <footer>
+            <div class="container">
+                    <div>
+                        <p> ©2022 - Training Studio By Exquisite</p>
+                    </div>
+                </div>
+        </footer>
+    
     <script src="index.js"></script>
 </body>
 </html>
