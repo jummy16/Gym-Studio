@@ -35,8 +35,8 @@ nav{
     height: 50%;
     margin-right: 10rem;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1rem;
+    right: -48rem;
     display: none;
 }
 .btn{
@@ -254,7 +254,7 @@ span{
     background-color: #f9735b;
   }
  .remain-tab-content{
-    /* display: none; */
+    display: none;
  }
  /* schedule classes */
  #schedule {
@@ -501,6 +501,12 @@ fieldset {
     margin: 0;
     border: 0;
 }
+.submit-btn{
+    background-color: #f9735b;
+    border: none;
+    padding: 1rem;
+    color: white;
+}
 
 .contact-form input, .contact-form textarea {
     color: #7a7a7a;
@@ -543,183 +549,144 @@ footer p {
 
 /* media query */
 
-@media screen and (min-width: 767px) {
-    .header-area .main-nav .nav {
+@media screen and (max-width: 1024px) {
+    body{
+        overflow-x: hidden;
+    }
+    nav {
         display: flex;
+        height: 3rem;
+        background-color: #f7f7f7;
     }
-
-    
-}
-
-@media (min-width: 701px) and (max-width: 900px) {
-   
-    .main-banner .caption h6 {
-        margin-top: 50px;  
-    }  
-
-    .header-area .main-nav .logo {
-        text-indent: 40px;
-    }
-  }
-  
-
-@media screen and (max-width: 700px) {
-    .nav {
+    .nav-section-ul{
         display: none;
     }
-
-    .header-area .main-nav {
-        background-color: #fff;
+    .header-div{
+        font-size: 8px;
+        margin-top: 4rem;
+        color: #1e1e1e;
     }
-
-    .header-area .main-nav .logo {
-        color: black;
-        text-indent: 80px;
-    }
-
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    .container {
-        width: 100%;
-        padding-right: 0;
-        padding-left: 0px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    #navtoggle {
+    .nav-icon{
         position: absolute;
-        visibility: visible;
-        right: 60px;
-        top: 14px;    
+        top: 1.5rem;
+        right: -5rem;
+        display: block;
     }
-
-    #navClose {
-        position: absolute;
-        right: 60px;
-        top: 25px; 
-    }
-
-    .main-banner .caption h2 {
-        margin-top: 30px;
-        margin-bottom: 25px;
-        font-size: 50px;
-        text-transform: uppercase;
-        font-weight: 800;
-        color: #fff;
-        letter-spacing: 1px;
-    }
-
-}
-
-@media screen and (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .offset-lg-3 {
-        margin-left: 25%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .col-lg-4 {
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .col-lg-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .offset-lg-1 {
-        margin-left: 8.333333%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .col-lg-8 {
-        flex: 0 0 66.666667%;
-        max-width: 66.666667%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .col-lg-10 {
-        flex: 0 0 83.333333%;
-        max-width: 83.333333%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .col-lg-12 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .col-md-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-}
-
- /* #schedule{
-    background-image: url(asset/);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0px 0px 140px;
-    background-position: center center;
-    text-align: center;
-    margin-top: 7rem;
- }
- .schedule-h2{
-    font-weight: 900;
-    text-transform: uppercase;
- }
- .schedule-week{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
- .schedule-week,li{
-    font-size: 1rem;
-    margin-top: 2rem;
-    padding: 1rem;
-}
- .schedule-week a{
-    text-decoration: none;
-    color: black;
- }
- .schedule-week,li :hover{
-    color: #f9735b;
-    text-decoration: none;
- }
- .schedule-table{
-        width: 50%;
-        border: 2px solid black;
-        border-collapse: collapse;
-        margin: 10px 20px 0 30px;
+    .main-section{
         text-align: center;
- }
- #schedule table tbody {
-    border-top: 1px solid black;
+        margin-right: 17rem;
+        margin-top: 150px;
+    }
+    .work-harder{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .easy{
+        font-size: 2.2rem;
+    }
+    .btn-2{
+        width: 30%;
+        font-size: 10px;
+    }
+    .first-section{
+        margin-top: 13rem;
+        margin-right: 15rem;
+    }
+    .choose-program{
+        font-size: 1.2rem;
+    }
+    .first-section-p{
+        font-size: 12px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .first-section-para{
+        font-size: 10px;
+    }
+    .first-section-link{
+        font-size: 10px;
+    }
+    #CTA{
+        margin-right: 11rem;
+    }
+    .cta-heading{
+        font-size: 1.5rem;
+        max-width: 50%;
+        word-break: break-word;
+        margin-left: 8rem;
+    }
+    .cta-paragraph{
+        font-size: 11px;
+        max-width: 70%;
+        word-break: break-word;
+        margin-left: 5rem;
+    }
+    .classes-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        margin-top: -0.5rem;
+    }
+    #tabs{
+        margin-left: -5rem;
+        width: 90%;
+    }
+    #tabs ul li a {
+        padding: 1rem;
+    }
+    .tab-content{
+        margin-right: 20rem;
+    }
+    .tab-img{
+        width: 100%;
+    }
+    .tab-para{
+        font-size: 10px;
+    }
+    .tab-content-btn{
+        width: 50%;
+    }
+    .section-link{
+        font-size: 12px;
+    }
+    .container{
+        margin-right: 20rem;
+    }
+    .schedule-filter{
+        margin-left: -7.2rem;
+    }
+    .section-heading-h2{
+        font-size: 1.3rem;
+    }
+    .section-heading-para{
+        font-size: 10px;
+    }
+    .schedule-table{
+        margin-left: -10rem;;
+    }
+    .trainer-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-fluid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-form{
+        width: 90%;
+        margin-left: -4rem;
+    }
+    .submit-btn{
+        background-color: #f9735b;
+        border: none;
+        padding: 1rem;
+        color: white;
+    }
 }
-td{
-    padding: 5px;
-    border: 1px solid black;
-} */
+
 
 
 

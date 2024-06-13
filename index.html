@@ -12,8 +12,10 @@
     <!-- navbar -->
     <nav>
         <div class="nav-section">
-            <h1 class="header"><a class="header-link" href="#">TRAINING<span>STUDIO</span></a></h1>
-        <ul>
+            <div class="header-div">
+                <h1 class="header"><a class="header-link" href="#">TRAINING<span>STUDIO</span></a></h1>
+            </div>
+            <ul class="nav-section-ul">
             <li><a class="nav-link" href="#home"><span>HOME</span></a></li>
             <li><a class="nav-link" href="#about">ABOUT</a></li>
             <li><a class="nav-link" href="#our-classes">CLASSES</a></li>
@@ -21,12 +23,14 @@
             <li><a class="nav-link" href="#contact-us">CONTACT</a></li>
         </ul>
         <button class="btn">SIGN UP</button>
+        <div class="nav-icon">
+            <!-- <img src="asset/bars-removebg-preview.png" alt="navbar"> -->
+            <i class="fa-solid fa-bars fa-lg"></i>
+            <i class="fa-light fa-xmark fa-lg"></i>
+            <!-- <img src="asset/close-removebg-preview.png" alt="closebar"> -->
+        </div>
     </div>
-    <div class="nav-icon">
-        <img src="asset/bars-removebg-preview.png" alt="navbar">
-        <img src="asset/close-removebg-preview.png" alt="closebar">
-    </div>
-    </nav>
+ </nav>
         <!-- main section -->
         <div id="home" >
             <video class="video" src="asset/gym-video.mp4" autoplay loop muted></video>
@@ -154,9 +158,9 @@
                 </div>
                 <div >
                     <div id="tab-1" class="tab-content">
-                        <img src="asset/training-image-01.jpg" alt="First Class">
+                        <img class="tab-img" src="asset/training-image-01.jpg" alt="First Class">
                             <h4>First Training Class</h4>
-                            <p> Lifting an appropriate amount of weight.
+                            <p class="tab-para"> Lifting an appropriate amount of weight.
                                 Start with a weight you can lift comfortably 12 to 15 times,
                                 instructors would be around to guide you.
                                 Learn to do each exercise correctly.
@@ -167,9 +171,9 @@
                     </div>
                     <div class="remain-tab-content">
                         <div id="tab-2" class="tab-content">
-                            <img src="asset/training-image-02.jpg" alt="Second Training">
+                            <img class="tab-img" src="asset/training-image-02.jpg" alt="Second Training">
                                 <h4>Second Training Class</h4>
-                                <p>Yoga is a mind and body practice.
+                                <p class="tab-para"></p>>Yoga is a mind and body practice.
                                     Various styles of yoga combines physical postures, breathing techniques, and meditation
                                     or relaxation.</p>
                                 <div class="tab-content-btn">
@@ -177,9 +181,9 @@
                                 </div>
                         </div>
                         <div id="tab-3" class="tab-content">
-                            <img src="asset/training-image-03.jpg" alt="Third Class">
+                            <img class="tab-img" src="asset/training-image-03.jpg" alt="Third Class">
                                 <h4>Third Training Class</h4>
-                                <p>Your induction should include a brief 'how to' for every machine.
+                                <p class="tab-para"></p>>Your induction should include a brief 'how to' for every machine.
                                     If there's one that was missed out and you want to use it, don't try to figure it out on
                                     your own: ask a staff member to show you how to use it properly.</p>
                                 <div class="tab-content-btn">
@@ -187,9 +191,9 @@
                                 </div>
                         </div>
                         <div id="tab-4" class="tab-content">
-                            <img src="asset/training-image-04.jpg" alt="Fourth Training">
+                            <img class="tab-img" src="asset/training-image-04.jpg" alt="Fourth Training">
                             <h4>Fourth Training Class</h4>
-                            <p>Warm ups are crucial as they prepare the body for the demands of exercise, loosening up
+                            <p class="tab-para"></p>>Warm ups are crucial as they prepare the body for the demands of exercise, loosening up
                                 the muscles and reducing the risk of injury.</p>
                             <div class="tab-content-btn">
                                 <a class="section-link"  href="#">View Schedule</a>
@@ -205,24 +209,24 @@
                         <div class="section-heading">
                             <h2 class="section-heading-h2">Classes <span>Schedule</span></h2>
                             <img src="asset/line-dec.png" alt="line-dec">
-                            <p>This class schedule typically includes all
+                            <p class="section-heading-para">This class schedule typically includes all
                                 of the workout routines that each<br/> member will be taught weekly.</p>
                         </div>
                         <div class="filters">
                             <ul class="schedule-filter">
-                                <li class="active" id="mon" onclick="showMday()" > <a >Monday</a></li>
+                                <li class="active" id="mon" onclick="showMday()"><a>Monday</a></li>
                                 <li id="tue" onclick="showTday()"><a>Tuesday</a></li>
                                 <li id="wed" onclick="showWday()"><a>Wednesday</a></li>
                                 <li id="thur" onclick="showThday()"><a>Thursday</a></li>
                                 <li id="fri" onclick="showFday()"><a>Friday</a></li>
                             </ul>
                         </div>
-                        <div class="schedule-table filtering">
+                        <div class="schedule-table">
                             <table>
                                 <tbody>
                                     <tr>
                                         <td class="day-time">Fitness Class</td>
-                                        <td id="m1"></td>
+                                        <td id="m1">10:00AM - 11:30AM</td>
                                         <td id="t1"></td>
                                         <td>William G. Stewart</td>
                                     </tr>
@@ -235,7 +239,7 @@
                                     <tr>
                                         <td class="day-time">Body Building</td>
                                         <td id="t2"></td>
-                                        <td id="m2"></td>
+                                        <td id="m2">2:00PM - 3:30PM</td>
                                         <td>Boyd C. Harris</td>
                                     </tr>
                                     <tr>
@@ -376,7 +380,7 @@
                                     </div>
                                     <div>
                                         <fieldset>
-                                            <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                                            <button class="submit-btn" type="submit" id="form-submit" class="main-button">Send Message</button>
                                         </fieldset>
                                     </div>
                             </form>
