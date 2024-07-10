@@ -11,7 +11,11 @@
 <body>
     <!-- navbar -->
     <nav>
-        <div class="nav-section">
+        <div class="nav-toggle">
+                <i class="fas fa-bars" id="toggle1"></i>
+                <i class="fas fa-xmark" id="toggle2"></i>
+        </div>
+        <div id="navtoggle" class="nav-section">
             <div class="header-div">
                 <h1 class="header"><a class="header-link" href="#">TRAINING<span>STUDIO</span></a></h1>
             </div>
@@ -23,14 +27,21 @@
             <li><a class="nav-link" href="#contact-us">CONTACT</a></li>
         </ul>
         <button class="btn">SIGN UP</button>
-        <div class="nav-icon">
-            <!-- <img src="asset/bars-removebg-preview.png" alt="navbar"> -->
-            <i class="fa-solid fa-bars fa-lg"></i>
-            <i class="fa-light fa-xmark fa-lg"></i>
-            <!-- <img src="asset/close-removebg-preview.png" alt="closebar"> -->
-        </div>
     </div>
  </nav>
+        <div id="navtoggle" class="nav-section nav-links2">
+            <div class="header-div">
+                <h1 class="header"><a class="header-link" href="#">TRAINING<span>STUDIO</span></a></h1>
+            </div>
+            <ul class="nav-section-ul">
+            <li><a class="nav-link" href="#home"><span>HOME</span></a></li>
+            <li><a class="nav-link" href="#about">ABOUT</a></li>
+            <li><a class="nav-link" href="#our-classes">CLASSES</a></li>
+            <li><a class="nav-link" href="#schedule">SCHEDULES</a></li>
+            <li><a class="nav-link" href="#contact-us">CONTACT</a></li>
+        </ul>
+        <button class="btn">SIGN UP</button>
+        </div>
         <!-- main section -->
         <div id="home" >
             <video class="video" src="asset/gym-video.mp4" autoplay loop muted></video>
@@ -145,13 +156,13 @@
             <div class="classes-grid">
                 <div id="tabs">
                     <ul>
-                        <li id="ui-id-2"><a href='#tabs-1'><img src="asset/tabs-first-icon.png" alt="">First Training
+                        <li class="tab-li-1"><a href='#tab-1'><img src="asset/tabs-first-icon.png" alt="">First Training
                                 Class</a></li>
-                        <li id="ui-id-2"><a href='#tabs-2'><img src="asset/tabs-first-icon.png" alt="">Second Training
+                        <li class="tab-li-2"><a href='#tab-2'><img src="asset/tabs-first-icon.png" alt="">Second Training
                                 Class</a></a></li>
-                        <li id="ui-id-2"><a href='#tabs-3'><img src="asset/tabs-first-icon.png" alt="">Third Training
+                        <li class="tab-li-3"><a href='#tab-3'><img src="asset/tabs-first-icon.png" alt="">Third Training
                                 Class</a></a></li>
-                        <li id="ui-id-2"><a href='#tabs-4'><img src="asset/tabs-first-icon.png" alt="">Fourth Training
+                        <li class="tab-li-4"><a href='#tab-4'><img src="asset/tabs-first-icon.png" alt="">Fourth Training
                                 Class</a></a></li>
                         <div class="Schedule-btn"><a href="#">View All Schedules</a></div>
                     </ul>
@@ -170,10 +181,10 @@
                             </div>
                     </div>
                     <div class="remain-tab-content">
-                        <div id="tab-2" class="tab-content">
+                        <div id="tab-2" class="tab-content ">
                             <img class="tab-img" src="asset/training-image-02.jpg" alt="Second Training">
                                 <h4>Second Training Class</h4>
-                                <p class="tab-para"></p>>Yoga is a mind and body practice.
+                                <p class="tab-para"></p>Yoga is a mind and body practice.
                                     Various styles of yoga combines physical postures, breathing techniques, and meditation
                                     or relaxation.</p>
                                 <div class="tab-content-btn">
@@ -183,7 +194,7 @@
                         <div id="tab-3" class="tab-content">
                             <img class="tab-img" src="asset/training-image-03.jpg" alt="Third Class">
                                 <h4>Third Training Class</h4>
-                                <p class="tab-para"></p>>Your induction should include a brief 'how to' for every machine.
+                                <p class="tab-para"></p>Your induction should include a brief 'how to' for every machine.
                                     If there's one that was missed out and you want to use it, don't try to figure it out on
                                     your own: ask a staff member to show you how to use it properly.</p>
                                 <div class="tab-content-btn">
@@ -193,7 +204,7 @@
                         <div id="tab-4" class="tab-content">
                             <img class="tab-img" src="asset/training-image-04.jpg" alt="Fourth Training">
                             <h4>Fourth Training Class</h4>
-                            <p class="tab-para"></p>>Warm ups are crucial as they prepare the body for the demands of exercise, loosening up
+                            <p class="tab-para"></p>Warm ups are crucial as they prepare the body for the demands of exercise, loosening up
                                 the muscles and reducing the risk of injury.</p>
                             <div class="tab-content-btn">
                                 <a class="section-link"  href="#">View Schedule</a>
